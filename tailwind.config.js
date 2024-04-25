@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         averia: ['Averia Serif Libre', 'serif'],
-        poppins: ['Poppins', 'sans-serif']
       }
     },
   },
