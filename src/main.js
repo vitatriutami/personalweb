@@ -2,11 +2,10 @@ const Typed = require("typed.js");
 
 const element = new Typed(".typing-text", {
   strings: [
-    "Hei",
-    "God morgen!",
-    "Velkommen!",
-    "Jeg bor i Indonesia",
-    "Hvor bor du?"],
+    "Vita",
+    "a Longlife Learner",
+    "a Devscale student",
+    "a Software Engineer wannabe!"],
   typeSpeed: 100,
   loop: true,
   showcursor: true,

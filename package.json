@@ -4,8 +4,7 @@
   "description": "Personal Web - Vita",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently --kill-others \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"npx webpack ./src/main.js --watch\"",
-    "jalankan": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "concurrently --kill-others \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"npx webpack ./src/main.js --watch\""
   },
   "keywords": [],
   "author": "vitatriutami",
