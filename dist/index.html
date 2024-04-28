@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/icon-bg.png">
-  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="icon-bg.png">
+  <link rel="stylesheet" href="/src/output.css">
   <title>Personal Web | Vita</title>
 </head>
 
@@ -17,25 +17,32 @@
         <nav class="flex justify-between items-center p-2 bg-yellow-200">
           <h1>vita</h1>
           <ul class="flex justify-between items-center gap-2">
-            <li class="hover:text-red-500">
+            <li class="hover:text-red-500 text-red-500">
               <a href="index.html">Home</a>
             </li>
             <li class="hover:text-red-500">
               <a href="project.html">Project</a>
             </li>
-            <li class="hover:text-red-500 text-red-500">
+            <li class="hover:text-red-500">
               <a href="contact.html">Contact</a>
-            </li>
             </li>
           </ul>
         </nav>
-
+        <!-- CONTENT -->
+        <section class="bg-slate-300 m-auto p-8">
+          <img src="icon-bg.png" class="mx-auto w-12 h-12" alt="">
+          <!-- Welcoming message -->
+          <section class="space-y-2 text-center">
+            <h1 class="text-5xl font-bold text-white">Hello<span class="emoji">👋</span></h1>
+            <h1 class="text-3xl font-bold text-red-500">I'm <span class="typing-text text-white"></span></h1>
+          </section>
+        </section>
 
       </div>
     </section>
   </main>
   <div class="bg-white absolute bottom-0 p-2 w-screen text-center">Footer</div>
-  <script src="../dist/main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 
