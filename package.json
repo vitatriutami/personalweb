@@ -2,10 +2,9 @@
   "name": "personalweb",
   "version": "1.0.0",
   "description": "Personal Web - Vita",
-  "source": "dist/index.html",
+  "main": "index.html",
   "scripts": {
-    "dev": "concurrently --kill-others \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"npx webpack ./src/main.js --watch\"",
-    "test": "npx webpack ./src/main.js --watch"
+    "dev": "concurrently --kill-others \"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch\" \"npx webpack ./src/main.js --watch\""
   },
   "keywords": [],
   "author": "vitatriutami",
