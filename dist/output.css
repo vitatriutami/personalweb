@@ -613,12 +613,16 @@ body {
   display: none;
 }
 
+.h-1{
+  height: 0.25rem;
+}
+
 .h-24{
   height: 6rem;
 }
 
-.h-32{
-  height: 8rem;
+.h-28{
+  height: 7rem;
 }
 
 .h-\[128px\]{
@@ -681,16 +685,16 @@ body {
   justify-content: space-between;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
@@ -733,6 +737,11 @@ body {
   background-color: rgb(165 180 252 / var(--tw-bg-opacity));
 }
 
+.bg-red-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .bg-slate-700{
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
@@ -748,6 +757,10 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-white\/40{
+  background-color: rgb(255 255 255 / 0.4);
+}
+
 .bg-yellow-200{
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
@@ -761,15 +774,6 @@ body {
 .bg-yellow-400{
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.bg-white\/40{
-  background-color: rgb(255 255 255 / 0.4);
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -852,11 +856,6 @@ body {
   line-height: 1.75rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -882,11 +881,6 @@ body {
 
 .text-transparent{
   color: transparent;
-}
-
-.text-slate-300{
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -955,32 +949,12 @@ body {
     position: fixed;
   }
 
-  .md\:-left-5{
-    left: -1.25rem;
-  }
-
-  .md\:-top-20{
-    top: -5rem;
-  }
-
-  .md\:-left-1{
-    left: -0.25rem;
+  .md\:-top-10{
+    top: -2.5rem;
   }
 
   .md\:left-1{
     left: 0.25rem;
-  }
-
-  .md\:right-1{
-    right: 0.25rem;
-  }
-
-  .md\:left-1\/2{
-    left: 50%;
-  }
-
-  .md\:left-7{
-    left: 1.75rem;
   }
 
   .md\:left-3{
@@ -1071,6 +1045,10 @@ body {
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:items-center{
+    align-items: center;
   }
 
   .lg\:text-2xl{

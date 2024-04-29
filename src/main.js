@@ -1,9 +1,5 @@
-const Typed = require("typed.js");
-const confetti = require("canvas-confetti");
-
-
 // NPM PACKAGE - Typed.js 
-
+const Typed = require("typed.js");
 const element = new Typed(".typing-text", {
   strings: [
     "Vita",
@@ -20,6 +16,8 @@ const element = new Typed(".typing-text", {
 });
 
 // Confetti
+const confetti = require("canvas-confetti");
+
 const helloBtn = document.getElementById('helloBtn');
 
 helloBtn.addEventListener("click", () => {
@@ -39,3 +37,10 @@ helloBtn.addEventListener("click", () => {
     spread: 160
   });
 });
+
+
+// AOS
+const AOS = require("aos");
+AOS.init(
+  
+);
