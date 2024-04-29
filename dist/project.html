@@ -11,27 +11,64 @@
 
 <body class="relative w-screen h-screen bg-slate-700">
   <main class="p-20 h-full">
-    <section class="p-4 h-full bg-white rounded-lg shadow-lg">
-      <div class="bg-rose-100 h-full">
-        <!-- nav -->
-        <nav class="flex justify-between items-center p-2 bg-yellow-200">
-          <h1>vita</h1>
-          <ul class="flex justify-between items-center gap-2">
-            <li class="hover:text-red-500">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="hover:text-red-500 text-red-500 ">
-              <a href="about.html">Project</a>
-            </li>
-            <li class="hover:text-red-500">
-              <a href="contact.html">Contact</a>
-            </li>
-            </li>
-          </ul>
-        </nav>
+    <section class="p-6 h-full bg-white rounded-lg shadow-lg">
 
+      <!-- nav -->
+      <nav class="bg-yellow-300 flex justify-between items-center p-2">
+        <h1
+          class="font-bold text-2xl bg-gradient-to-r from-rose-500 to-indigo-500 bg-clip-text text-transparent tracking-tight">
+          vita.</h1>
+        <ul class="flex justify-between items-center gap-8 md:text-xl lg:text-2xl">
+          <li class="hover:text-red-500 ">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-red-500 text-red-500">
+            <a href="project.html">Project</a>
+          </li>
+          <li class="hover:text-red-500">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- CONTENT -->
+      <section class="w-full h-full flex">
+        <!-- CARD -->
+        <!-- CARD CONTENT -->
+        <section class="m-auto">
+          <div
+            class="lg:w-[800px] m-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 grid-row-3 lg:grid-row-2 grid-flow-row-dense gap-4 px-8">
+            <!-- CONTENT 1 -->
+            <div
+              class="lg:col-span-2 bg-yellow-200 relative rounded-lg p-2 flex flex-col items-center space-y-3 hover:shadow-lg">
+              <div class="h-32  ">
+                <img src="agumon.png" class="w-24 h-24 mx-auto" alt="">
+                <h1 class="md:text-xl lg:text-2xl"><span class="font-averia font-bold text-xl md:text-3xl">Digimon
+                    App</span>, an app to find digimon name.</h1>
+              </div>
+            </div>
+            <!-- CONTENT 2 -->
+            <div class="lg:row-span-2 bg-teal-300 rounded-lg shadow-xl p-8 flex flex-col">
+              <div class="h-32">
+                <h1>this is map</h1>
+              </div>
+            </div>
+            <!-- CONTENT 3 -->
+            <div class="bg-indigo-300 rounded-lg shadow-xl p-8 flex flex-col">
+              <div class="h-32">
+                <h1>this is project</h1>
+              </div>
+            </div>
+            <!-- CONTENT 4 -->
+            <div class="bg-emerald-300 rounded-lg shadow-xl p-8 flex flex-col">
+              <div class="h-32">
+                <h1>this is media</h1>
+              </div>
+            </div>
+          </div>
 
-      </div>
+        </section>
+      </section>
+
     </section>
   </main>
   <div class="bg-white absolute bottom-0 p-2 w-screen text-center">Footer</div>
