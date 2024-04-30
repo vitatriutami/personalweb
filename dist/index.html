@@ -9,72 +9,144 @@
   <title>Personal Web | Vita</title>
 </head>
 
-<body class="relative w-screen h-screen bg-slate-700">
-  <main class="p-20 h-full">
-    <section class="p-6 h-full bg-white rounded-lg shadow-lg">
+<body class="max-w-screen h-screen p-8 flex justify-center items-center bg-black">
+  <main class="relative bg-rose-100 p-4 w-[800px] h-[85vh]">
+    <nav class="flex justify-between items-center">
+      <h1
+        class="font-bold text-3xl bg-gradient-to-r from-rose-500 to-indigo-500 bg-clip-text text-transparent tracking-tight">
+        vita.</h1>
+      <ul class="flex justify-between items-center gap-4">
+        <li id="nav1" class="hover:bg-blue-200 p-2 cursor-pointer">Home</li>
+        <li id="nav2" class="hover:bg-blue-200 p-2 cursor-pointer">Project</li>
+        <li id="nav3" class="hover:bg-blue-200 p-2 cursor-pointer">Contact</li>
+      </ul>
+    </nav>
+    <div class="absolute my-auto left-0 right-0 top-4 bottom-1 bg-yellow-300 w-11/12 h-4/5 mx-auto p-2">
+      <!-- Home -->
+      <div id="content1" class="grid md:flex my-auto md:justify-between items-center p-8 space-y-6 md:gap-4">
+        <div class="flex flex-col items-center">
+          <img src="icon-bg.png" class="w-[150px] h-[150px]" alt="">
+          <ul class="flex gap-2">
+            <li class="cursor-pointer bg-white hover:bg-rose-100 p-2 rounded-full inline-block">ig</li>
+            <li class="cursor-pointer bg-white hover:bg-rose-100 p-2 rounded-full inline-block">ln</li>
+            <li class="cursor-pointer bg-white hover:bg-rose-100 p-2 rounded-full inline-block">github</li>
+            <li class="cursor-pointer bg-white hover:bg-rose-100 p-2 rounded-full inline-block">gitlab</li>
+          </ul>
+        </div>
+        <!-- welcoming message -->
+        <div class="flex flex-col justify-center items-center md:items-start">
+          <h1 class="text-lg">Hi!, myself</h1>
+          <h1 class="text-2xl">Vita</h1>
+          <h1>And I'm</h1>
+          <h1>
+            <span class="typing-text text-black"></span>
+          </h1>
 
-      <!-- nav -->
-      <nav class="bg-yellow-300 flex justify-between items-center p-2">
-        <h1
-          class="font-bold text-2xl bg-gradient-to-r from-rose-500 to-indigo-500 bg-clip-text text-transparent tracking-tight">
-          vita.</h1>
-        <ul class="flex justify-between items-center gap-8 md:text-xl lg:text-2xl">
-          <li class="hover:text-red-500 text-red-500">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="hover:text-red-500">
-            <a href="project.html">Project</a>
-          </li>
-          <li class="hover:text-red-500">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- CONTENT -->
-      <section class="h-full flex flex-col items-center">
-        <div class="relative p-4 m-auto md:flex md:justify-between md:gap-6 md:items-center">
-          <img src="icon-bg.png" class="hidden md:block mx-auto w-[128px] h-[128px] md:w-[256px] md:h-[256px]" alt="">
-          <div class="m-auto space-y-7 w-[400px] md:w-[500px] lg:w-[750px]">
-            <div class="">
-              <img src="icon-bg.png" class="md:hidden mx-auto w-[128px] h-[128px] md:w-[256px] md:h-[256px]" alt="">
-              <!-- Welcoming message -->
-              <section class="space-y-2 text-center">
-                <h1 class="text-5xl md:text-7xl font-bold text-rose-500">Hello<span class="emoji">👋</span></h1>
-                <h1 class="text-3xl md:text-5xl font-bold text-red-500">I'm <span class="typing-text text-black"></span>
-                </h1>
-              </section>
-            </div>
-            <button id="helloBtn"
-              class="absolute right-1 -top-12 md:-top-10 md:left-1 mt-10 border rounded-full bg-yellow-400 w-[128px] p-3 text-center">Let's
-              cheer
-              <span>🎉</span></button>
+          <div class="hidden md:block mt-6">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, cupiditate?</p>
+            <button id="readBtn" class="bg-white p-2">Read more</button>
           </div>
         </div>
-      </section>
+      </div>
 
-    </section>
+      <!-- Project -->
+      <div id="content2" class="bg-slate-100 grid place-items-center h-full p-8">
+        <div class="flex flex-col items-center">
+          <h1 class="font-bold text-3xl">Hi!</h1>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div id="content3" class="flex mx-auto items-center p-8">
+        <h2 class="mb-12 text-xl tracking-tight font-extrabold text-center text-gray-900">Contact
+          Me</h2>
+        <div class="md:flex gap-4 items-center">
+          <div class="w-[500px] mx-auto hidden md:block">
+            <form action="#" class="space-y-2">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-900">Your email</label>
+                <input type="email" id="email"
+                  class="w-2/5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2"
+                  placeholder="name@gmail.com" required>
+              </div>
+              <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
+                <input type="text" id="subject"
+                  class="block p-3 w-2/5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                  placeholder="Let me know how I can help you" required>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your
+                  message</label>
+                <textarea id="message" rows="6"
+                  class="block p-2.5 w-4/6 h-20 text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
+                  placeholder="Leave a comment..."></textarea>
+              </div>
+              <button type="submit"
+                class="bg-red-300 py-3 px-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
+                <a href="mailto:vitatriutami@gmail.com">Send message</a></button>
+            </form>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <a href="mailto:vitatriutami@gmail.com"
+              class="bg-slate-100 p-2 w-[220px] flex flex-col items-center rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="m18.73 5.41l-1.28 1L12 10.46L6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64" />
+              </svg>
+              <h1 class="">vitatriutami@gmail.com</h1>
+            </a>
+            <a href="https://linkedin.com/in/vita-tri-utami" target="_black" rel="noopener"
+              class="bg-slate-100 p-2 w-[220px] flex flex-col items-center rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M8.339 18.337H5.667v-8.59h2.672zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096m11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" />
+              </svg>
+              <h1>Vita Tri Utami</h1>
+            </a>
+            <a href="https://github.com/vitatriutami" target="_black" rel="noopener"
+              class="bg-slate-100 p-2 w-[220px] flex flex-col items-center rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974c0 4.406 2.857 8.145 6.821 9.465c.499.09.679-.217.679-.481c0-.237-.008-.865-.011-1.696c-2.775.602-3.361-1.338-3.361-1.338c-.452-1.152-1.107-1.459-1.107-1.459c-.905-.619.069-.605.069-.605c1.002.07 1.527 1.028 1.527 1.028c.89 1.524 2.336 1.084 2.902.829c.091-.645.351-1.085.635-1.334c-2.214-.251-4.542-1.107-4.542-4.93c0-1.087.389-1.979 1.024-2.675c-.101-.253-.446-1.268.099-2.64c0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336a9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021c.545 1.372.203 2.387.099 2.64c.64.696 1.024 1.587 1.024 2.675c0 3.833-2.33 4.675-4.552 4.922c.355.308.675.916.675 1.846c0 1.334-.012 2.41-.012 2.737c0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974C22 6.465 17.535 2 12.026 2"
+                  clip-rule="evenodd" />
+              </svg>
+              <h1>github</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <div class="flex gap-3 md:fixed md:flex-col md:left-3 top-1/2 bg-white/40 p-2 rounded-full">
-    <button class="hover:-translate-y-0.5 transform transition">
-      <a href="https://linkedin.com/in/vita-tri-utami" target="_black" rel="noopener">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256">
-          <path fill="#0A66C2"
-            d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4c-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186zM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009c-.002-12.157 9.851-22.014 22.008-22.016c12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97zM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" />
-        </svg>
-      </a>
-    </button>
-    <button class="hover:-translate-y-0.5 transform transition">
-      <a href="https://github.com/vitatriutami" target="_black" rel="noopener">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 250">
-          <path fill="#161614"
-            d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46c6.397 1.185 8.746-2.777 8.746-6.158c0-3.052-.12-13.135-.174-23.83c-35.61 7.742-43.124-15.103-43.124-15.103c-5.823-14.795-14.213-18.73-14.213-18.73c-11.613-7.944.876-7.78.876-7.78c12.853.902 19.621 13.19 19.621 13.19c11.417 19.568 29.945 13.911 37.249 10.64c1.149-8.272 4.466-13.92 8.127-17.116c-28.431-3.236-58.318-14.212-58.318-63.258c0-13.975 5-25.394 13.188-34.358c-1.329-3.224-5.71-16.242 1.24-33.874c0 0 10.749-3.44 35.21 13.121c10.21-2.836 21.16-4.258 32.038-4.307c10.878.049 21.837 1.47 32.066 4.307c24.431-16.56 35.165-13.12 35.165-13.12c6.967 17.63 2.584 30.65 1.255 33.873c8.207 8.964 13.173 20.383 13.173 34.358c0 49.163-29.944 59.988-58.447 63.157c4.591 3.972 8.682 11.762 8.682 23.704c0 17.126-.148 30.91-.148 35.126c0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002C256 57.307 198.691 0 128.001 0m-80.06 182.34c-.282.636-1.283.827-2.194.39c-.929-.417-1.45-1.284-1.15-1.922c.276-.655 1.279-.838 2.205-.399c.93.418 1.46 1.293 1.139 1.931m6.296 5.618c-.61.566-1.804.303-2.614-.591c-.837-.892-.994-2.086-.375-2.66c.63-.566 1.787-.301 2.626.591c.838.903 1 2.088.363 2.66m4.32 7.188c-.785.545-2.067.034-2.86-1.104c-.784-1.138-.784-2.503.017-3.05c.795-.547 2.058-.055 2.861 1.075c.782 1.157.782 2.522-.019 3.08m7.304 8.325c-.701.774-2.196.566-3.29-.49c-1.119-1.032-1.43-2.496-.726-3.27c.71-.776 2.213-.558 3.315.49c1.11 1.03 1.45 2.505.701 3.27m9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033c-1.448-.439-2.395-1.613-2.103-2.626c.301-1.01 1.747-1.484 3.207-1.028c1.446.436 2.396 1.602 2.095 2.622m10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95c-1.53.034-2.769-.82-2.786-1.86c0-1.065 1.202-1.932 2.733-1.958c1.522-.03 2.768.818 2.768 1.868m10.555-.405c.182 1.03-.875 2.088-2.387 2.37c-1.485.271-2.861-.365-3.05-1.386c-.184-1.056.893-2.114 2.376-2.387c1.514-.263 2.868.356 3.061 1.403" />
-        </svg>
-      </a>
-    </button>
+  <!-- icon -->
+  <div class="fixed z-50 left-4 top-4 flex gap-3 items-center">
+    <div class="">
+      <div class="relative w-16 h-16 border border-white rounded-full bg-yellow-200">
+        <img src="icon-bg.png" class="" alt="">
+        <button id="helloBtn"
+          class="absolute -right-2 top-0 rounded-full bg-white text-center hover:-translate-y-0.5 transform transition text-xl font-semibold">
+          <span>🎉</span></button>
+      </div>
+    </div>
+    <div class="flex gap-3 md:fixed md:flex-col md:right-3 top-1/2 bg-gray-300/40 p-3 rounded-full">
+      <button class="hover:-translate-y-0.5 transform transition">
+        <a href="https://linkedin.com" target="_black" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256">
+            <path fill="#0A66C2"
+              d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4c-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186zM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009c-.002-12.157 9.851-22.014 22.008-22.016c12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97zM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" />
+          </svg>
+        </a>
+      </button>
+      <button class="hover:-translate-y-0.5 transform transition">
+        <a href="https://github.com/vitatriutami" target="_black" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 250">
+            <path fill="#161614"
+              d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46c6.397 1.185 8.746-2.777 8.746-6.158c0-3.052-.12-13.135-.174-23.83c-35.61 7.742-43.124-15.103-43.124-15.103c-5.823-14.795-14.213-18.73-14.213-18.73c-11.613-7.944.876-7.78.876-7.78c12.853.902 19.621 13.19 19.621 13.19c11.417 19.568 29.945 13.911 37.249 10.64c1.149-8.272 4.466-13.92 8.127-17.116c-28.431-3.236-58.318-14.212-58.318-63.258c0-13.975 5-25.394 13.188-34.358c-1.329-3.224-5.71-16.242 1.24-33.874c0 0 10.749-3.44 35.21 13.121c10.21-2.836 21.16-4.258 32.038-4.307c10.878.049 21.837 1.47 32.066 4.307c24.431-16.56 35.165-13.12 35.165-13.12c6.967 17.63 2.584 30.65 1.255 33.873c8.207 8.964 13.173 20.383 13.173 34.358c0 49.163-29.944 59.988-58.447 63.157c4.591 3.972 8.682 11.762 8.682 23.704c0 17.126-.148 30.91-.148 35.126c0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002C256 57.307 198.691 0 128.001 0m-80.06 182.34c-.282.636-1.283.827-2.194.39c-.929-.417-1.45-1.284-1.15-1.922c.276-.655 1.279-.838 2.205-.399c.93.418 1.46 1.293 1.139 1.931m6.296 5.618c-.61.566-1.804.303-2.614-.591c-.837-.892-.994-2.086-.375-2.66c.63-.566 1.787-.301 2.626.591c.838.903 1 2.088.363 2.66m4.32 7.188c-.785.545-2.067.034-2.86-1.104c-.784-1.138-.784-2.503.017-3.05c.795-.547 2.058-.055 2.861 1.075c.782 1.157.782 2.522-.019 3.08m7.304 8.325c-.701.774-2.196.566-3.29-.49c-1.119-1.032-1.43-2.496-.726-3.27c.71-.776 2.213-.558 3.315.49c1.11 1.03 1.45 2.505.701 3.27m9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033c-1.448-.439-2.395-1.613-2.103-2.626c.301-1.01 1.747-1.484 3.207-1.028c1.446.436 2.396 1.602 2.095 2.622m10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95c-1.53.034-2.769-.82-2.786-1.86c0-1.065 1.202-1.932 2.733-1.958c1.522-.03 2.768.818 2.768 1.868m10.555-.405c.182 1.03-.875 2.088-2.387 2.37c-1.485.271-2.861-.365-3.05-1.386c-.184-1.056.893-2.114 2.376-2.387c1.514-.263 2.868.356 3.061 1.403" />
+          </svg>
+        </a>
+      </button>
+    </div>
   </div>
-  <div class="bg-white absolute bottom-0 p-2 w-screen text-center">Copyright 2024 | Vita Tri Utami</div>
-  <script src="main.js"></script>
-
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
