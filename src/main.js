@@ -89,3 +89,12 @@ const element = new Typed(".typing-text", {
   startDelay: 1000,
   fadeOut: true
 });
+
+
+// NPM PACKAGE - GREET VISITOR
+const greet = require("greet-visitor");
+
+const elementGreet = new greet(".greeting", {
+  emoji: true,
+  morning: "Good morning!"
+});
