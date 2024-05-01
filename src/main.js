@@ -45,6 +45,7 @@ nav2.addEventListener("click", () => {
   content1.style.display = "none";
   content2.style.display = "block";
   content3.style.display = "none";
+  content2.classList.remove('hidden');
   nav2.classList.add(activeClass);
   nav1.classList.remove(activeClass);
   nav3.classList.remove(activeClass);
@@ -54,6 +55,7 @@ nav3.addEventListener("click", () => {
   content1.style.display = "none";
   content2.style.display = "none";
   content3.style.display = "block";
+  content3.classList.remove('hidden');
   nav3.classList.add(activeClass);
   nav1.classList.remove(activeClass);
   nav2.classList.remove(activeClass);
