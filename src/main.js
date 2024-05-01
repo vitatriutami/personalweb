@@ -78,7 +78,7 @@ const Typed = require("typed.js");
 
 const element = new Typed(".typing-text", {
   strings: [
-    "Vita",
+    "a Fullstack Developer",
     "a Longlife Learner",
     "based in Indonesia",
   ],
