@@ -98,7 +98,8 @@ const greet = require("greet-visitor");
 
 const elementGreet = greet({
   emoji: true,
-  morning: "Good morning!"
+  morning: "Good morning!",
+  noon: "Good noon!"
 });
 
 document.getElementById('greetings').innerHTML = '<b>' + elementGreet + '</b>';
