@@ -94,7 +94,9 @@ const element = new Typed(".typing-text", {
 // NPM PACKAGE - GREET VISITOR
 const greet = require("greet-visitor");
 
-const elementGreet = new greet(".greeting", {
+const elementGreet = greet({
   emoji: true,
   morning: "Good morning!"
 });
+
+document.getElementById('greetings').innerHTML = '<b>' + elementGreet + '</b>';
